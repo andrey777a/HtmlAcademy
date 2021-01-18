@@ -1,0 +1,33 @@
+.container {
+    padding-top: 70px;
+    padding-left: 97px;
+    padding-right: 97px;
+    width: 1200px;
+    height: 402px;
+    text-align: center;
+}
+h2 {
+    color: #333333;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 82px;
+}
+.text {
+    margin: auto;
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    width: 160px;
+    height: 164px;
+    padding-top: 19px;
+    padding-bottom: 97px;
+}
+img {
+    width: 71px;
+    height: 71px;
+}
