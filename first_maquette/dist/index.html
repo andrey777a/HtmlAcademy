@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Good card board</title>
+  </head>
+  <body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="header__logo">
+                        <img src="img/header/header-logo.png" alt="header-logo">
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="header-contacts">
+                        <div class="header-contacts__phone">
+                            8 (347) 271-54-28
+                        </div>
+                        <div class="header-contacts__phone">
+                            8 (937) 363-30-00
+                        </div>
+                        <button class="header-contacts__button button">
+                            <img src="img/header/free-icon-phone-call-126509.png" alt="phone">
+                            Заказать звонок
+                        </buton>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5">
+                    <div class="main-img">
+                        <img src="img/main/box.png" alt="Картон">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="main-text">
+                        <div class="main-text__title">
+                            <h1>
+                                Производство упаковки из гофрокартона
+                            </h1>
+                            </div>
+                        <div class="main-text__subtitle">
+                                с доставкой по всей России
+                        </div>
+                        <div class="main-text__form">
+                            <div class="form-title">
+                                Получите индивидуальное предложение
+                                на производство и поставку гофропродукции<br>
+                                <span class="form-title__important">
+                                Образцы упаковки бесплатно!
+                                </span>
+                            </div>
+                            <form action="#" class="form">
+                                <input class="form__input" type="tel" placeholder="Введите номер телефона">
+                                <button class="button button_big" type="submit">Оставить заявку!</button>
+                            </form>
+                            <small class="form-small">*Минимальный заказ 500шт</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-title">Форма обратной связи</div>
+            <div class="popup-close">&times;</div>
+            <div class="popup-form">
+
+                <form action="#" class="main-form">
+                    <div class="popup-form-header">
+                        Получите индивидуальное предложение
+                        <span>на производство и поставку изделий</span>
+                        <label for="phone" class="popup-form__label">
+                            Введите ваш номер телефона:
+                        </label>
+                        <input type="tel" class="popup-form_input" name="phone" required>
+                        <button class="button button-form__btn">
+                            Оставить заявку!
+                        </button>
+                        <div class="popup-form__note">
+                            *Минимальный заказ 500шт
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script>
+
+        $(document).ready(function(){
+            
+            $('.header-contacts__button').on("click", function(){
+               $('.overlay').show()  
+            });
+            $('.popup-close').on("click", function (){
+                $('.overlay').hide();
+            });
+        });
+
+    </script>
+
+  </body>
+</html>

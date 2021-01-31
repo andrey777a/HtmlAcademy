@@ -1,0 +1,71 @@
+.overlay
+    position: fixed
+    display: none
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 3
+    background-color: rgba(0,0, 0,.4)
+    .popup
+        position: fixed
+        left: 50%
+        top: 100px
+        width: 752px
+        transform: translateX(-50%)
+        &-close
+            position: absolute
+            right: -20px
+            top: -35px
+            font-size: 35px
+            color: #fff
+            font-weight: 300
+            cursor: pointer
+        &-title
+            display: block
+            width: 100%
+            max-height: 71px
+            margin: 0
+            background-color: #ff9d00
+            color: #ffffff
+            text-transform: uppercase
+            line-height: 71px
+            font-size: 21px
+            font-weight: 500
+            text-align: center
+        &-form
+            background: url(../img/modal/bg.png) center no-repeat
+            background-size: cover
+            padding: 35px 88px 50px 88px
+            color: #fff
+            &-header
+                padding: 0
+                font-size: 30px
+                font-weight: 400px
+                line-height: 27px
+                text-align: center
+                span
+                    font-size: 24px
+            &__label
+                display: block
+                margin-top: 23px
+                font-size: 20px
+                font-weight: 300
+                line-height: 30px
+            &__input
+                width: 365px
+                height: 56px
+                margin-top: 17px
+            &__btn
+                margin-left: 16px
+                width: 180px
+                height: 56px
+                font-size: 15px
+                font-weight: 500
+                line-height: 22px
+                background-color: #ff9d00
+            &__note
+                margin-top: 9px
+                font-size: 14px
+                font-weight: 300
+                line-height: 30px
+                text-align: center

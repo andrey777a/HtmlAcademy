@@ -1,0 +1,123 @@
+img
+    max-width: 100%
+input, button
+    &:focus
+        outline: none
+body
+    background-color: #ffffff
+    font-family: 'Roboto', 'sans-serif' 
+.header
+    padding: 20px 0px
+    &-contacts
+        display: flex
+        justify-content: center
+        align-items: center
+        &__phone
+            font-size: 22px
+            margin-right: 15px
+            color: #373737
+            &:first-child
+                border-right: 1px solid #cfcfd0
+                padding-right: 13px
+            
+        &__button
+            font-size: 14px
+            background-color: #ff9d00  
+            border: none
+            color: #ffffff
+            padding: 13px 22px
+            border-radius: 5px
+            &:hover
+                background-color: lighten(#ff9d00, 12)
+                cursor: pointer
+img
+    vertical-align: middle
+
+.main
+    position: relative
+    padding-top: 65px
+    padding-bottom: 60px
+    background: #373737 url(../img/main/main_bg.jpg) center no-repeat
+    background-size: cover 
+    color: #fff
+    z-index: -2
+
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.6)
+        z-index: -1
+
+
+    /*оформление главной картинки*/
+    &-img
+      position: relative
+      &::before
+          content: ''
+          position: absolute
+          width: 390px
+          height: 390px
+          left: 50%
+          margin-left: -195px
+          border: 1px solid #fff
+          border-radius: 50%
+          z-index: -1
+    &-text
+        &__title
+            margin-bottom: 20px
+            font-style: 41px
+            font-weight: 700
+             z-index: 3
+        &__subtitle
+            font-style: 28px
+            font-weight: 300
+        &__form
+            padding: 30px 27px
+            max-width: 545px
+            background-color: rgba(#fff, 0.2)
+.form
+    display: flex
+    margin-bottom: 12px
+    // justify-content: space-between
+    &-title
+        margin-bottom: 20px
+        padding-right: 87px
+        font-size: 20px
+        font-weight: 300
+        line-height: 30px
+        &__important
+            font-weight: 700
+            text-transform: uppercase
+    &__input
+        margin-right: 10px
+        font-size: 14px
+        padding: 19px
+        border-radius: 4px
+        border: none
+        vertical-align: middle
+        flex-basis: 60%
+    &-small
+        font-style: 14px
+        font-weight: 300
+.button
+    font-size: 14px
+    background-color: #ff9d00  
+    border: none
+    color: #ffffff
+    padding: 13px 22px
+    border-radius: 5px
+    &:hover
+        background-color: lighten(#ff9d00, 12)
+        cursor: pointer
+    &_big
+        padding-top: 21px
+        padding-bottom: 21px
+        border: none
+        vertical-align: middle
+
+@import 'modal'
