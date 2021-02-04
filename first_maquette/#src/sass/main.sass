@@ -6,30 +6,7 @@ input, button
 body
     background-color: #ffffff
     font-family: 'Roboto', 'sans-serif' 
-.header
-    padding: 20px 0px
-    &-contacts
-        display: flex
-        justify-content: center
-        align-items: center
-        &__phone
-            font-size: 22px
-            margin-right: 15px
-            color: #373737
-            &:first-child
-                border-right: 1px solid #cfcfd0
-                padding-right: 13px
-            
-        &__button
-            font-size: 14px
-            background-color: #ff9d00  
-            border: none
-            color: #ffffff
-            padding: 13px 22px
-            border-radius: 5px
-            &:hover
-                background-color: lighten(#ff9d00, 12)
-                cursor: pointer
+
 img
     vertical-align: middle
 
@@ -93,6 +70,7 @@ img
         &__important
             font-weight: 700
             text-transform: uppercase
+            display: block
     &__input
         margin-right: 10px
         font-size: 14px
@@ -120,4 +98,6 @@ img
         border: none
         vertical-align: middle
 
+@import 'header'
 @import 'modal'
+@import 'media'
