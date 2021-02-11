@@ -82,22 +82,51 @@ img
     &-small
         font-style: 14px
         font-weight: 300
+
+.section
+    &-title
+        font-size: 27px
+        font-weight: 700
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 29px
+        &::after
+            margin-top: 12px
+            content: ''
+            display: block
+            height: 6px
+            background: url(../img/line.png) center no-repeat
 .button
     font-size: 14px
     background-color: #ff9d00  
-    border: none
+    border: 1px solid transparent
     color: #ffffff
     padding: 13px 22px
     border-radius: 5px
     &:hover
         background-color: lighten(#ff9d00, 12)
         cursor: pointer
+    &-o
+        background-color: transparent
+        color: #373737
+        border: 1px solid rgba(#373737, 5)
+        &:hover
+            background-color: transparent
+            cursor: pointer
+            color: #d6d6d6
+            border: 1px solid transparent
+    img
+        vertical-align: middle
     &_big
         padding-top: 21px
         padding-bottom: 21px
         border: none
         vertical-align: middle
+        
 
 @import 'header'
 @import 'modal'
 @import 'media'
+@import 'features'
+@import 'products'
+@import 'production'
